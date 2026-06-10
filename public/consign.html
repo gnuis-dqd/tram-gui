@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ký gửi sách - TRẠM GỬI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>TRẠM GỬI</h1>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="books.html">Danh sách sách</a>
+      <a href="consign.html">Ký gửi sách</a>
+      <a href="login.html">Đăng nhập</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <section class="form-box">
+    <h2>Đăng ký ký gửi sách</h2>
+
+    <form id="bookForm">
+      <input id="name" placeholder="Tên sách" required>
+
+      <select id="category" required>
+        <option value="">Chọn loại sách</option>
+        <option>Giáo trình</option>
+        <option>Sách ngoại ngữ</option>
+        <option>Sách kỹ năng</option>
+        <option>Sách ôn thi</option>
+      </select>
+
+      <select id="condition" required>
+        <option value="">Tình trạng sách</option>
+        <option>Loại A</option>
+        <option>Loại B</option>
+        <option>Loại C</option>
+      </select>
+
+      <input id="price" type="number" placeholder="Giá mong muốn" required>
+
+      <button type="submit">Gửi ký gửi</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
